@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm start *)",
+      "Bash(echo \"PID=$!\")",
+      "PowerShell(Get-Process *)",
+      "Bash(npm test *)",
+      "Bash(npm run *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const v=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\);console.log\\(v.slice\\(-5\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\);let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>{const v=JSON.parse\\(d\\);console.log\\(v.filter\\(x=>x.startsWith\\('36.'\\)\\).join\\('\\\\n'\\)\\);}\\)\")",
+      "Bash(npm install *)",
+      "Bash(Remove-Item -Recurse -Force C:\\\\projects\\\\agents\\\\release -ErrorAction SilentlyContinue)",
+      "Bash(Write-Host \"release dir cleared\")"
+    ]
+  }
+}
